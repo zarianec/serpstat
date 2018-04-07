@@ -1,0 +1,22 @@
+{
+  "name": "serpstat/parser",
+  "description": "Simple site parser",
+  "type": "project",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Artiom Stoianov",
+      "email": "stoianov.artem@gmail.com"
+    }
+  ],
+  "minimum-stability": "stable",
+  "require": {},
+  "require-dev": {
+  },
+  "autoload": {
+    "psr-4": {
+      "App\\": "app/",
+      "Api\\": "api/"
+    }
+  }
+}

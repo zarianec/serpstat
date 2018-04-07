@@ -1,0 +1,15 @@
+#!/usr/bin/env php
+<?php
+
+define('ROOT_PATH', __DIR__);
+
+require __DIR__ . '/vendor/autoload.php';
+
+$config = require __DIR__ . '/config/main.php';
+
+try {
+    $handler = new \App\Console\Handler($config);
+    $handler->handle($argv);
+} catch (\Throwable $e) {
+    echo "Error: {$e->getMessage()}" . PHP_EOL;
+}
