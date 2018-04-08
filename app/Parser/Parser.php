@@ -11,6 +11,7 @@ namespace App\Parser;
 
 
 use Api\Parser\TypeInterface;
+use Api\Report\FileReporterInterface;
 use App\Exceptions\Parser\BadUrlException;
 use App\Helpers\HttpClient;
 use App\Helpers\StringHelper;
@@ -92,7 +93,7 @@ class Parser
     }
 
     /**
-     * @return array
+     * @return FileReporterInterface[]
      */
     public function getReports()
     {
