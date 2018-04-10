@@ -53,7 +53,7 @@ class ReportCommand extends AbstractCommand
 
         if (is_file($reportsPath . '/' . $imagesReport)) {
             $this->hasReports = true;
-            print "Images report for $domain: /var/reports/" . $imagesReport . PHP_EOL;
+            print "Images report for $domain: " . BASE_URL . "/reports/" . $imagesReport . PHP_EOL;
         }
     }
 }

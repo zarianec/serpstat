@@ -79,8 +79,9 @@ class ImageParser implements TypeInterface
             echo "-- $originalName" . PHP_EOL;
 
             $file = $this->downloadImage($imageUrl, $domain);
+            $localUrl = BASE_URL . "/images/$domain/$file";
             if ($file !== false) {
-                $this->reporter->addRow([$originalName, $imageUrl, $file, $currentPage]);
+                $this->reporter->addRow([$originalName, $imageUrl, $file, $localUrl, $currentPage]);
             }
         }
     }

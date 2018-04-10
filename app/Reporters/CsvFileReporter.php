@@ -80,7 +80,7 @@ class CsvFileReporter implements FileReporterInterface
      */
     public function getLink(): string
     {
-        return '/var/reports/' . $this->getFileName();
+        return BASE_URL . '/reports/' . $this->getFileName();
     }
 
     /**
